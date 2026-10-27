@@ -1,0 +1,208 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Halka Gizlilik Politikası</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Noto+Sans:wght@400;600&family=Noto+Naskh+Arabic:wght@500&display=swap">
+<style>
+  /* Tek sütun belge. Üstte tesbih taneleri motifi; veriler nerede tutuluyor tablosu ana bilgi. */
+  :root {
+    --bg: #f5f8f6;
+    --fg: #17251d;
+    --muted: #536259;
+    --line: #d3ded7;
+    --accent: #2e7d4f;
+    --panel: #ffffff;
+    --chip: #e3f0e8;
+    --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --body: "Noto Sans", "Segoe UI", system-ui, sans-serif;
+    --arabic: "Noto Naskh Arabic", "Segoe UI", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #101713; --fg: #e2ece6; --muted: #9bb0a3; --line: #27352d;
+      --accent: #6cc794; --panel: #16201a; --chip: #1c2d23; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #101713; --fg: #e2ece6; --muted: #9bb0a3; --line: #27352d;
+    --accent: #6cc794; --panel: #16201a; --chip: #1c2d23; color-scheme: dark;
+  }
+
+  body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.65; }
+  .wrap {
+    max-width: 44rem; margin: 0 auto; padding-block: 48px 64px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  header { display: grid; gap: 12px; padding-bottom: 28px; border-bottom: 1px solid var(--line); }
+  .beads {
+    height: 12px; width: 168px;
+    background: radial-gradient(circle at 6px 6px, var(--accent) 5px, transparent 5.5px) 0 0 / 18px 12px repeat-x;
+  }
+  .brand { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  h1 {
+    font-family: var(--display); font-weight: 700; font-size: clamp(1.9rem, 5.5vw, 2.5rem);
+    line-height: 1.12; margin: 0; text-wrap: balance; letter-spacing: -0.01em;
+  }
+  .ar { font-family: var(--arabic); font-size: 1.5rem; color: var(--accent); }
+  .meta { color: var(--muted); margin: 0; font-size: 0.95rem; }
+  .promise {
+    display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 0; padding: 0; list-style: none;
+  }
+  .promise li {
+    background: var(--chip); color: var(--fg); border-radius: 999px;
+    padding: 4px 12px; font-size: 0.9rem; font-weight: 600;
+  }
+  h2 { font-family: var(--display); font-weight: 600; font-size: 1.25rem; margin: 0; text-wrap: balance; }
+  section { display: grid; gap: 12px; padding-block: 26px; border-bottom: 1px solid var(--line); }
+  section p, section ul { margin: 0; }
+  ul { padding-left: 1.2rem; display: grid; gap: 6px; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+  .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
+  table { border-collapse: collapse; width: 100%; min-width: 34rem; font-size: 0.95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+  tr:last-child td { border-bottom: 0; }
+  th { font-family: var(--display); font-weight: 600; font-size: 0.85rem; letter-spacing: 0.04em; color: var(--muted); }
+  td:first-child { font-weight: 600; }
+  .where { white-space: nowrap; }
+  .tag {
+    display: inline-block; font-size: 0.8rem; font-weight: 600; border-radius: 6px; padding: 1px 8px;
+    background: var(--chip); color: var(--accent);
+  }
+
+  .lang { font-family: var(--display); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 40px 0 0; }
+  .en h2 { font-size: 1.4rem; }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="beads" aria-hidden="true"></div>
+    <div class="brand">
+      <h1>Halka Gizlilik Politikası</h1>
+      <span class="ar" lang="ar" dir="rtl">حلقة</span>
+    </div>
+    <p class="meta">Son güncelleme: 27 Ekim 2026 · Android tesbihat ve zikirmatik uygulaması</p>
+    <ul class="promise" aria-label="Kısaca">
+      <li>Hesap yok</li>
+      <li>Reklam yok</li>
+      <li>Ad, e-posta, telefon istenmez</li>
+      <li>Ücretsiz</li>
+    </ul>
+  </header>
+
+  <section>
+    <p>Bu metin, Halka uygulamasını (bundan sonra "uygulama") kullanırken hangi bilgilerin işlendiğini ve nerede tutulduğunu anlatır. Uygulamada hesap açma, reklam, analiz ya da takip aracı yoktur. Bilgilerinizin büyük kısmı yalnızca kendi telefonunuzda kalır.</p>
+  </section>
+
+  <section>
+    <h2>Hangi bilgi nerede tutulur</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th scope="col">Bilgi</th><th scope="col">Nerede</th><th scope="col">Ne için</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Zikir sayıları, tesbihat geçmişi, istatistikler</td>
+            <td class="where"><span class="tag">Telefonunuz</span></td>
+            <td>Sayaç ve istatistik ekranları</td>
+          </tr>
+          <tr>
+            <td>Namaz takibi ve kaza kayıtları</td>
+            <td class="where"><span class="tag">Telefonunuz</span></td>
+            <td>Namaz takibi ekranı</td>
+          </tr>
+          <tr>
+            <td>Ayarlar (tema, yazı, dil, hatırlatmalar)</td>
+            <td class="where"><span class="tag">Telefonunuz</span></td>
+            <td>Uygulamanın görünümü ve bildirimler</td>
+          </tr>
+          <tr>
+            <td>Seçtiğiniz ülke, il ve ilçe</td>
+            <td class="where"><span class="tag">Telefonunuz</span></td>
+            <td>Namaz vakitlerini getirmek</td>
+          </tr>
+          <tr>
+            <td>Yaklaşık konum</td>
+            <td class="where"><span class="tag">Telefonunuz</span></td>
+            <td>Kıble yönünü hesaplamak; hiçbir yere gönderilmez</td>
+          </tr>
+          <tr>
+            <td>İsimsiz kimlik ve ortak vird katkı sayınız</td>
+            <td class="where"><span class="tag">Firebase (Google)</span></td>
+            <td>Ortak vird toplamını tutmak</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Uygulamayı silerseniz ya da uygulama verilerini temizlerseniz telefonunuzda tutulan bütün bu bilgiler de silinir.</p>
+  </section>
+
+  <section>
+    <h2>Namaz vakitleri</h2>
+    <p>Vakitler, Diyanet İşleri Başkanlığı verilerini sunan ezanvakti.emushaf.net hizmetinden alınır. Uygulama bu hizmete yalnızca seçtiğiniz ilçenin numarasını gönderir. Her internet isteğinde olduğu gibi, bu hizmet bağlantı için IP adresinizi görür. Vakitler telefonunuza kaydedilir ve internet olmadan da gösterilir.</p>
+  </section>
+
+  <section>
+    <h2>Konum ve kıble</h2>
+    <p>Kıble pusulası için telefonunuzdan yaklaşık konum izni istenir. Konum yalnızca telefonda kıble açısını hesaplamak için kullanılır; kaydedilmez ve kimseye gönderilmez. İzni vermezseniz uygulamanın geri kalanı normal çalışır.</p>
+  </section>
+
+  <section>
+    <h2>Vakit hatırlatmaları</h2>
+    <p>Hatırlatma bildirimleri telefonunuzda planlanır ve telefonunuz tarafından gösterilir. Bunun için bir sunucu kullanılmaz.</p>
+  </section>
+
+  <section>
+    <h2>Ortak vird</h2>
+    <p>Vird sekmesinde herkesin birlikte okuduğu ortak hedefler (ör. 100.000 salavat) bulunur. Bu bölüm Google'ın Firebase hizmetini kullanır ve yalnızca sekmeyi açtığınızda çalışır. Bu sırada:</p>
+    <ul>
+      <li>Telefonunuz için rastgele, isimsiz bir kimlik oluşturulur (Firebase Authentication, anonim giriş). Bu kimlik adınıza, e-postanıza ya da telefon numaranıza bağlı değildir.</li>
+      <li>Her hedef için yalnızca katkı sayınız ve son katkı zamanı bu kimlikle saklanır. Hedefin toplam sayısı herkese görünür; sizin katkınızı yalnızca siz görürsünüz.</li>
+      <li>Veriler Google Cloud'un Frankfurt (Almanya) veri merkezinde tutulur. Google, hizmeti sağlamak için IP adresi ve cihaz bilgisi gibi teknik bilgileri işleyebilir.</li>
+    </ul>
+    <p>Ayrıntılar için <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase gizlilik ve güvenlik</a> sayfasına ve <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik Politikası</a>'na bakabilirsiniz.</p>
+  </section>
+
+  <section>
+    <h2>Paylaşma</h2>
+    <p>Günün duasını paylaşmayı seçerseniz metin, telefonunuzun paylaşım ekranı üzerinden sizin seçtiğiniz uygulamaya gönderilir. Uygulama bu metni başka bir yere göndermez.</p>
+  </section>
+
+  <section>
+    <h2>Silme ve haklarınız</h2>
+    <p>Uygulamayı silmek, telefonunuzdaki bütün verileri ve isimsiz kimliği kaldırır. Daha önce ortak virde eklediğiniz sayılar, size bağlanamayan isimsiz sayılar olarak toplamda kalır.</p>
+    <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve geçerli diğer mevzuat kapsamında verileriniz hakkında bilgi isteme, düzeltilmesini veya silinmesini talep etme haklarınız vardır. İsimsiz katkı kaydınızın silinmesini isterseniz aşağıdaki iletişim yolundan bize yazabilirsiniz.</p>
+  </section>
+
+  <section>
+    <h2>Çocuklar</h2>
+    <p>Uygulama 13 yaşından küçük çocuklara özel olarak yönelik değildir. Uygulama kimseden ad, e-posta veya telefon gibi kişisel bilgi istemez.</p>
+  </section>
+
+  <section>
+    <h2>Değişiklikler ve iletişim</h2>
+    <p>Bu politika güncellenirse yeni tarih bu sayfada yazılır. Sorularınız için Google Play'deki Halka mağaza sayfasında yer alan geliştirici e-posta adresinden bize ulaşabilirsiniz.</p>
+  </section>
+
+  <p class="lang">English</p>
+  <div class="en" lang="en">
+    <section>
+      <h2>Privacy Policy (summary)</h2>
+      <p>Halka is a free tasbihat and dhikr counter app with no account, no ads and no analytics. It never asks for your name, email or phone number.</p>
+      <ul>
+        <li><strong>On your phone only:</strong> dhikr counts, tasbihat history, statistics, prayer tracking, settings and your chosen city. Uninstalling the app deletes them.</li>
+        <li><strong>Prayer times:</strong> fetched from ezanvakti.emushaf.net using only your selected district number. That service sees your IP address, as with any internet request.</li>
+        <li><strong>Qibla:</strong> your approximate location is used on the phone to calculate the direction and is never stored or sent.</li>
+        <li><strong>Reminders:</strong> scheduled and shown by your phone; no server is involved.</li>
+        <li><strong>Shared wird:</strong> when you open the Wird tab, Google Firebase creates a random anonymous ID and stores only your contribution count and last update time per goal, in Frankfurt, Germany. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy</a>.</li>
+        <li><strong>Contact:</strong> use the developer email shown on Halka's Google Play page.</li>
+      </ul>
+    </section>
+  </div>
+</div>
+
+</body></html>
