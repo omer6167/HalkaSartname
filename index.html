@@ -84,7 +84,7 @@
       <h1>Halka Gizlilik Politikası</h1>
       <span class="ar" lang="ar" dir="rtl">حلقة</span>
     </div>
-    <p class="meta">Son güncelleme: 27 Ekim 2026 · Android tesbihat ve zikirmatik uygulaması</p>
+    <p class="meta">Son güncelleme: 29 Ekim 2026 · Android tesbihat ve zikirmatik uygulaması</p>
     <ul class="promise" aria-label="Kısaca">
       <li>Hesap yok</li>
       <li>Reklam yok</li>
@@ -94,7 +94,7 @@
   </header>
 
   <section>
-    <p>Bu metin, Halka uygulamasını (bundan sonra "uygulama") kullanırken hangi bilgilerin işlendiğini ve nerede tutulduğunu anlatır. Uygulamada hesap açma, reklam, analiz ya da takip aracı yoktur. Bilgilerinizin büyük kısmı yalnızca kendi telefonunuzda kalır.</p>
+    <p>Bu metin, Halka uygulamasını (bundan sonra "uygulama") kullanırken hangi bilgilerin işlendiğini ve nerede tutulduğunu anlatır. Uygulamada hesap açma, reklam, analiz ya da takip aracı yoktur. Bilgilerinizin büyük kısmı yalnızca kendi telefonunuzda kalır. Sunucuya giden tek şey, Vird sekmesinde kendi isteğinizle yaptığınız katkılar ve paylaştığınız okuma talepleridir.</p>
   </section>
 
   <section>
@@ -116,7 +116,7 @@
             <td>Namaz takibi ekranı</td>
           </tr>
           <tr>
-            <td>Ayarlar (tema, yazı, dil, hatırlatmalar)</td>
+            <td>Ayarlar (tema, yazı, dil, hatırlatmalar, uzun dualarda kaldığınız sayfa)</td>
             <td class="where"><span class="tag">Telefonunuz</span></td>
             <td>Uygulamanın görünümü ve bildirimler</td>
           </tr>
@@ -131,9 +131,39 @@
             <td>Kıble yönünü hesaplamak; hiçbir yere gönderilmez</td>
           </tr>
           <tr>
+            <td>Kişisel vird listeniz (Virdim) ve günlük sayıları</td>
+            <td class="where"><span class="tag">Telefonunuz</span></td>
+            <td>Virdim ekranı</td>
+          </tr>
+          <tr>
+            <td>Vird, sûre ve dini gün hatırlatmaları</td>
+            <td class="where"><span class="tag">Telefonunuz</span></td>
+            <td>Telefonun gösterdiği bildirimler</td>
+          </tr>
+          <tr>
+            <td>Günün vakitleri ve ilçe adı (widget için kopya)</td>
+            <td class="where"><span class="tag">Telefonunuz</span></td>
+            <td>Ana ekran widget'ları</td>
+          </tr>
+          <tr>
             <td>İsimsiz kimlik ve ortak vird katkı sayınız</td>
             <td class="where"><span class="tag">Firebase (Google)</span></td>
             <td>Ortak vird toplamını tutmak</td>
+          </tr>
+          <tr>
+            <td>Okuma talepleriniz (yazdığınız metin, ne okunacağı, hedef sayı) ve son talep zamanınız</td>
+            <td class="where"><span class="tag">Firebase (Google)</span></td>
+            <td>Talebi onaydan sonra herkese göstermek; günde bir talep sınırı</td>
+          </tr>
+          <tr>
+            <td>Aldığınız hatim cüzleri</td>
+            <td class="where"><span class="tag">Firebase (Google)</span></td>
+            <td>Aynı cüzün iki kişiye verilmemesi</td>
+          </tr>
+          <tr>
+            <td>Uygunsuz talep bildirimleriniz</td>
+            <td class="where"><span class="tag">Firebase (Google)</span></td>
+            <td>Moderasyon</td>
           </tr>
         </tbody>
       </table>
@@ -152,8 +182,8 @@
   </section>
 
   <section>
-    <h2>Vakit hatırlatmaları</h2>
-    <p>Hatırlatma bildirimleri telefonunuzda planlanır ve telefonunuz tarafından gösterilir. Bunun için bir sunucu kullanılmaz.</p>
+    <h2>Hatırlatmalar</h2>
+    <p>Vakit, vird, sûre (ör. Cuma günü Kehf) ve kandil / dini gün hatırlatmaları telefonunuzda planlanır ve telefonunuz tarafından gösterilir. Bunun için bir sunucu kullanılmaz.</p>
   </section>
 
   <section>
@@ -167,6 +197,30 @@
     <p>Ayrıntılar için <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase gizlilik ve güvenlik</a> sayfasına ve <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik Politikası</a>'na bakabilirsiniz.</p>
   </section>
 
+    <section>
+      <h2>Okuma talepleri ve hatim</h2>
+      <p>Vird sekmesinde "şu kadar Fetih okunsun" ya da "hatim yapılsın" gibi bir talep paylaşabilirsiniz. Talepler de aynı isimsiz kimlikle Firebase'de saklanır:</p>
+      <ul>
+        <li>Yazdığınız metin, ne okunacağı ve hedef sayı kaydedilir. Talep önce yalnızca size görünür; uygulama yöneticisi tarafından okunup onaylanınca bütün kullanıcılara gösterilir. Uygunsuz bulunan talepler yayınlanmaz.</li>
+        <li>Talep metnine ad soyad, telefon, adres ya da sağlık bilgisi gibi sizi veya başkasını tanıtan bilgiler yazmamanızı rica ederiz. Yazdığınız metin onaylanırsa herkes tarafından okunabilir.</li>
+        <li>Kötüye kullanımı önlemek için son talep zamanınız saklanır ve 24 saatte bir talep açılabilir.</li>
+        <li>Hatimde bir cüz aldığınızda cüz numarası, isimsiz kimliğiniz, alma zamanı ve okundu bilgisi saklanır. Diğer kullanıcılar cüzün alındığını görür, kimin aldığını görmez.</li>
+        <li>Bir talebi uygunsuz diye bildirdiğinizde talebin numarası, isimsiz kimliğiniz ve bildirim zamanı kaydedilir; bunu yalnızca uygulama yöneticisi görür.</li>
+        <li>Kendi talebinizi uygulama içinden istediğiniz zaman silebilirsiniz.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Yedekleme ve yeni telefona geçiş</h2>
+      <p>Ayarlar &gt; Yedekle ve taşı bölümünden telefonunuzdaki verilerin (ayarlar, zikirler, Virdim, hatırlatmalar, namaz takibi, istatistikler, seçtiğiniz ilçe) bir kopyasını tek bir dosya olarak oluşturabilirsiniz. Dosya, Android'in dosya penceresinde sizin seçtiğiniz yere kaydedilir; uygulama bu dosyayı hiçbir sunucuya göndermez. Dosyayı Google Drive gibi bir hizmete kaydederseniz o hizmetin kuralları geçerli olur. Dosya şifrelenmez; güvenli bir yerde saklamanız önerilir. Vird sekmesindeki ortak sayılar ve talepler yedeğe dahil değildir.</p>
+    </section>
+
+    <section>
+      <h2>Widget'lar</h2>
+      <p>Ana ekran widget'larının vakitleri gösterebilmesi için günün vakitleri ve seçtiğiniz ilçenin adı telefonun içinde widget'ın okuyabileceği bir yere kopyalanır. Bu bilgi telefondan çıkmaz.</p>
+    </section>
+
+
   <section>
     <h2>Paylaşma</h2>
     <p>Günün duasını paylaşmayı seçerseniz metin, telefonunuzun paylaşım ekranı üzerinden sizin seçtiğiniz uygulamaya gönderilir. Uygulama bu metni başka bir yere göndermez.</p>
@@ -174,8 +228,8 @@
 
   <section>
     <h2>Silme ve haklarınız</h2>
-    <p>Uygulamayı silmek, telefonunuzdaki bütün verileri ve isimsiz kimliği kaldırır. Daha önce ortak virde eklediğiniz sayılar, size bağlanamayan isimsiz sayılar olarak toplamda kalır.</p>
-    <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve geçerli diğer mevzuat kapsamında verileriniz hakkında bilgi isteme, düzeltilmesini veya silinmesini talep etme haklarınız vardır. İsimsiz katkı kaydınızın silinmesini isterseniz aşağıdaki iletişim yolundan bize yazabilirsiniz.</p>
+    <p>Uygulamayı silmek, telefonunuzdaki bütün verileri ve isimsiz kimliği kaldırır. Daha önce ortak virde eklediğiniz sayılar, size bağlanamayan isimsiz sayılar olarak toplamda kalır. Uygulamayı sildikten sonra isimsiz kimliğiniz telefonda kalmadığı için eski taleplerinizi uygulamadan silemezsiniz; silmek istediğiniz talepleri uygulamayı kaldırmadan önce silin ya da bize yazın.</p>
+    <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve geçerli diğer mevzuat kapsamında verileriniz hakkında bilgi isteme, düzeltilmesini veya silinmesini talep etme haklarınız vardır. İsimsiz katkı kaydınızın ya da bir talebinizin silinmesini isterseniz aşağıdaki iletişim yolundan bize yazabilirsiniz.</p>
   </section>
 
   <section>
@@ -194,11 +248,13 @@
       <h2>Privacy Policy (summary)</h2>
       <p>Halka is a free tasbihat and dhikr counter app with no account, no ads and no analytics. It never asks for your name, email or phone number.</p>
       <ul>
-        <li><strong>On your phone only:</strong> dhikr counts, tasbihat history, statistics, prayer tracking, settings and your chosen city. Uninstalling the app deletes them.</li>
+        <li><strong>On your phone only:</strong> dhikr counts, tasbihat history, statistics, prayer tracking, your personal wird list, reminders, settings and your chosen city. Uninstalling the app deletes them.</li>
         <li><strong>Prayer times:</strong> fetched from ezanvakti.emushaf.net using only your selected district number. That service sees your IP address, as with any internet request.</li>
         <li><strong>Qibla:</strong> your approximate location is used on the phone to calculate the direction and is never stored or sent.</li>
-        <li><strong>Reminders:</strong> scheduled and shown by your phone; no server is involved.</li>
-        <li><strong>Shared wird:</strong> when you open the Wird tab, Google Firebase creates a random anonymous ID and stores only your contribution count and last update time per goal, in Frankfurt, Germany. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy</a>.</li>
+        <li><strong>Reminders:</strong> prayer, wird, sura and religious-day reminders are scheduled and shown by your phone; no server is involved.</li>
+        <li><strong>Widgets:</strong> today's prayer times and your district name are copied to widget storage on the phone.</li>
+        <li><strong>Shared wird:</strong> when you open the Wird tab, Google Firebase creates a random anonymous ID and stores only your contribution count and last update time per goal, in Frankfurt, Germany. Reading requests you post (your text, what to read, target count), the juz you take in a khatm and reports you send are stored with the same anonymous ID. Requests are shown to everyone only after a moderator approves them, so please do not write personal details in them; you can delete your own requests in the app. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy</a>.</li>
+        <li><strong>Backup:</strong> Settings &gt; Backup and transfer creates an unencrypted file of your on-phone data, saved where you choose. The app never uploads it.</li>
         <li><strong>Contact:</strong> use the developer email shown on Halka's Google Play page.</li>
       </ul>
     </section>
